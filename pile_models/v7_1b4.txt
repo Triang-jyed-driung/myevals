@@ -1,0 +1,122 @@
+ninja: no work to do.
+
+### RWKV-7 "Goose" enabled ###
+
+ninja: no work to do.
+Loading model - /home/zhangping/zrc/RWKV-x070-Pile-1.47B-20241210-ctx4096
+Loading /home/zhangping/zrc/RWKV-x070-Pile-1.47B-20241210-ctx4096 (cuda fp32)
+
+RWKV_PAD [0]
+STOP_TOKEN [535]
+Running evaluation on ['hellaswag', 'lambada_openai', 'piqa', 'winogrande', 'arc_challenge', 'arc_easy', 'sciq', 'glue'] with 0-shot examples
+bootstrapping for stddev: f1_score
+bootstrapping for stddev: matthews_corrcoef
+bootstrapping for stddev: f1_score
+bootstrapping for stddev: perplexity
+{
+  "glue": {
+    "f1,none": 0.5339979817990063,
+    "f1_stderr,none": 0.002793615065887323,
+    "acc,none": 0.4078430204859457,
+    "acc_stderr,none": 0.00188890841290467,
+    "mcc,none": -0.003529333911764896,
+    "mcc_stderr,none": 0.032593539646836686,
+    "alias": "glue"
+  },
+  "cola": {
+    "mcc,none": -0.003529333911764896,
+    "mcc_stderr,none": 0.032593539646836686,
+    "alias": " - cola"
+  },
+  "mnli": {
+    "acc,none": 0.37473255221599594,
+    "acc_stderr,none": 0.004886192731522826,
+    "alias": " - mnli"
+  },
+  "mnli_mismatch": {
+    "acc,none": 0.36889747762408465,
+    "acc_stderr,none": 0.004866356852203374,
+    "alias": " - mnli_mismatch"
+  },
+  "mrpc": {
+    "acc,none": 0.6593137254901961,
+    "acc_stderr,none": 0.023492334306756932,
+    "f1,none": 0.7884322678843226,
+    "f1_stderr,none": 0.020532313867456787,
+    "alias": " - mrpc"
+  },
+  "qnli": {
+    "acc,none": 0.5063152114222954,
+    "acc_stderr,none": 0.0067648708954625315,
+    "alias": " - qnli"
+  },
+  "qqp": {
+    "acc,none": 0.40558990848379917,
+    "acc_stderr,none": 0.002441969063495532,
+    "f1,none": 0.5314303540789268,
+    "f1_stderr,none": 0.002814173495474264,
+    "alias": " - qqp"
+  },
+  "rte": {
+    "acc,none": 0.5667870036101083,
+    "acc_stderr,none": 0.029826764082138274,
+    "alias": " - rte"
+  },
+  "sst2": {
+    "acc,none": 0.5378440366972477,
+    "acc_stderr,none": 0.016893256723229628,
+    "alias": " - sst2"
+  },
+  "wnli": {
+    "acc,none": 0.4225352112676056,
+    "acc_stderr,none": 0.059039842056825796,
+    "alias": " - wnli"
+  },
+  "sciq": {
+    "acc,none": 0.911,
+    "acc_stderr,none": 0.009008893392651516,
+    "acc_norm,none": 0.869,
+    "acc_norm_stderr,none": 0.0106748748448379,
+    "alias": "sciq"
+  },
+  "arc_easy": {
+    "acc,none": 0.6485690235690236,
+    "acc_stderr,none": 0.00979639558281776,
+    "acc_norm,none": 0.5938552188552189,
+    "acc_norm_stderr,none": 0.010077409815364034,
+    "alias": "arc_easy"
+  },
+  "arc_challenge": {
+    "acc,none": 0.30204778156996587,
+    "acc_stderr,none": 0.013417519144716299,
+    "acc_norm,none": 0.33276450511945393,
+    "acc_norm_stderr,none": 0.013769863046192425,
+    "alias": "arc_challenge"
+  },
+  "winogrande": {
+    "acc,none": 0.6440410418310971,
+    "acc_stderr,none": 0.013456740656273902,
+    "alias": "winogrande"
+  },
+  "piqa": {
+    "acc,none": 0.735582154515778,
+    "acc_stderr,none": 0.010289787244767095,
+    "acc_norm,none": 0.735038084874864,
+    "acc_norm_stderr,none": 0.010296557993316033,
+    "alias": "piqa"
+  },
+  "lambada_openai": {
+    "perplexity,none": 4.800868316287585,
+    "perplexity_stderr,none": 0.1032091425204248,
+    "acc,none": 0.6699010285270716,
+    "acc_stderr,none": 0.006551480922052605,
+    "alias": "lambada_openai"
+  },
+  "hellaswag": {
+    "acc,none": 0.46345349531965746,
+    "acc_stderr,none": 0.00497643438746986,
+    "acc_norm,none": 0.6177056363274248,
+    "acc_norm_stderr,none": 0.004849547819134307,
+    "alias": "hellaswag"
+  }
+}

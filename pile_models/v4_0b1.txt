@@ -1,0 +1,164 @@
+ninja: no work to do.
+Loading model - /home/zhangping/zrc/RWKV-4-Pile-169M-20220807-8023.pth
+RWKV_JIT_ON 1 RWKV_CUDA_ON 1 RESCALE_LAYER 0
+
+Loading /home/zhangping/zrc/RWKV-4-Pile-169M-20220807-8023.pth ...
+Model detected: v4.0
+Strategy: (total 12+1=13 layers)
+* cuda [float32, float32], store 13 layers
+0-cuda-float32-float32 1-cuda-float32-float32 2-cuda-float32-float32 3-cuda-float32-float32 4-cuda-float32-float32 5-cuda-float32-float32 6-cuda-float32-float32 7-cuda-float32-float32 8-cuda-float32-float32 9-cuda-float32-float32 10-cuda-float32-float32 11-cuda-float32-float32 12-cuda-float32-float32 
+emb.weight                        f32      cpu  50277   768       
+blocks.0.ln1.weight               f32   cuda:0    768             
+blocks.0.ln1.bias                 f32   cuda:0    768             
+blocks.0.ln2.weight               f32   cuda:0    768             
+blocks.0.ln2.bias                 f32   cuda:0    768             
+blocks.0.att.time_decay           f32   cuda:0    768             
+blocks.0.att.time_first           f32   cuda:0    768             
+blocks.0.att.time_mix_k           f32   cuda:0    768             
+blocks.0.att.time_mix_v           f32   cuda:0    768             
+blocks.0.att.time_mix_r           f32   cuda:0    768             
+blocks.0.att.key.weight           f32   cuda:0    768   768       
+blocks.0.att.value.weight         f32   cuda:0    768   768       
+blocks.0.att.receptance.weight    f32   cuda:0    768   768       
+blocks.0.att.output.weight        f32   cuda:0    768   768       
+blocks.0.ffn.time_mix_k           f32   cuda:0    768             
+blocks.0.ffn.time_mix_r           f32   cuda:0    768             
+blocks.0.ffn.key.weight           f32   cuda:0    768  3072       
+blocks.0.ffn.receptance.weight    f32   cuda:0    768   768       
+blocks.0.ffn.value.weight         f32   cuda:0   3072   768       
+....................................................................................................................................................................................
+blocks.11.ln1.weight              f32   cuda:0    768             
+blocks.11.ln1.bias                f32   cuda:0    768             
+blocks.11.ln2.weight              f32   cuda:0    768             
+blocks.11.ln2.bias                f32   cuda:0    768             
+blocks.11.att.time_decay          f32   cuda:0    768             
+blocks.11.att.time_first          f32   cuda:0    768             
+blocks.11.att.time_mix_k          f32   cuda:0    768             
+blocks.11.att.time_mix_v          f32   cuda:0    768             
+blocks.11.att.time_mix_r          f32   cuda:0    768             
+blocks.11.att.key.weight          f32   cuda:0    768   768       
+blocks.11.att.value.weight        f32   cuda:0    768   768       
+blocks.11.att.receptance.weight   f32   cuda:0    768   768       
+blocks.11.att.output.weight       f32   cuda:0    768   768       
+blocks.11.ffn.time_mix_k          f32   cuda:0    768             
+blocks.11.ffn.time_mix_r          f32   cuda:0    768             
+blocks.11.ffn.key.weight          f32   cuda:0    768  3072       
+blocks.11.ffn.receptance.weight   f32   cuda:0    768   768       
+blocks.11.ffn.value.weight        f32   cuda:0   3072   768       
+ln_out.weight                     f32   cuda:0    768             
+ln_out.bias                       f32   cuda:0    768             
+head.weight                       f32   cuda:0    768 50277       
+RWKV_PAD [0]
+STOP_TOKEN [535]
+Running evaluation on ['hellaswag', 'lambada_openai', 'piqa', 'winogrande', 'arc_challenge', 'arc_easy', 'sciq', 'glue'] with 0-shot examples
+bootstrapping for stddev: f1_score
+bootstrapping for stddev: matthews_corrcoef
+bootstrapping for stddev: f1_score
+bootstrapping for stddev: perplexity
+{
+  "glue": {
+    "f1,none": 0.5404487925563696,
+    "f1_stderr,none": 0.002659276138918571,
+    "acc,none": 0.3787368985231062,
+    "acc_stderr,none": 0.0018606499347665734,
+    "mcc,none": 0.0,
+    "mcc_stderr,none": 0.0,
+    "alias": "glue"
+  },
+  "cola": {
+    "mcc,none": 0.0,
+    "mcc_stderr,none": 0.0,
+    "alias": " - cola"
+  },
+  "mnli": {
+    "acc,none": 0.34844625573102395,
+    "acc_stderr,none": 0.004809722239484927,
+    "alias": " - mnli"
+  },
+  "mnli_mismatch": {
+    "acc,none": 0.34479251423921886,
+    "acc_stderr,none": 0.004793684987853556,
+    "alias": " - mnli_mismatch"
+  },
+  "mrpc": {
+    "acc,none": 0.6617647058823529,
+    "acc_stderr,none": 0.02345114530350664,
+    "f1,none": 0.7940298507462686,
+    "f1_stderr,none": 0.020315034808789323,
+    "alias": " - mrpc"
+  },
+  "qnli": {
+    "acc,none": 0.49405088779059125,
+    "acc_stderr,none": 0.006764931652871225,
+    "alias": " - qnli"
+  },
+  "qqp": {
+    "acc,none": 0.369527578530794,
+    "acc_stderr,none": 0.002400545685014327,
+    "f1,none": 0.5378897751994198,
+    "f1_stderr,none": 0.0026782638575272707,
+    "alias": " - qqp"
+  },
+  "rte": {
+    "acc,none": 0.5306859205776173,
+    "acc_stderr,none": 0.030039730592197837,
+    "alias": " - rte"
+  },
+  "sst2": {
+    "acc,none": 0.6215596330275229,
+    "acc_stderr,none": 0.0164335371443543,
+    "alias": " - sst2"
+  },
+  "wnli": {
+    "acc,none": 0.43661971830985913,
+    "acc_stderr,none": 0.05927935558412972,
+    "alias": " - wnli"
+  },
+  "sciq": {
+    "acc,none": 0.776,
+    "acc_stderr,none": 0.013190830072364589,
+    "acc_norm,none": 0.703,
+    "acc_norm_stderr,none": 0.01445683229480096,
+    "alias": "sciq"
+  },
+  "arc_easy": {
+    "acc,none": 0.47095959595959597,
+    "acc_stderr,none": 0.010242463826395433,
+    "acc_norm,none": 0.42424242424242425,
+    "acc_norm_stderr,none": 0.01014133365495849,
+    "alias": "arc_easy"
+  },
+  "arc_challenge": {
+    "acc,none": 0.19880546075085323,
+    "acc_stderr,none": 0.011662850198175603,
+    "acc_norm,none": 0.23890784982935154,
+    "acc_norm_stderr,none": 0.012461071376316715,
+    "alias": "arc_challenge"
+  },
+  "winogrande": {
+    "acc,none": 0.5122336227308603,
+    "acc_stderr,none": 0.014048278820405729,
+    "alias": "winogrande"
+  },
+  "piqa": {
+    "acc,none": 0.6479869423286181,
+    "acc_stderr,none": 0.011143148953065991,
+    "acc_norm,none": 0.6507072905331882,
+    "acc_norm_stderr,none": 0.011123283817525193,
+    "alias": "piqa"
+  },
+  "lambada_openai": {
+    "perplexity,none": 29.20091572190073,
+    "perplexity_stderr,none": 0.9774623185788299,
+    "acc,none": 0.33165146516592275,
+    "acc_stderr,none": 0.0065592552732574244,
+    "alias": "lambada_openai"
+  },
+  "hellaswag": {
+    "acc,none": 0.29346743676558457,
+    "acc_stderr,none": 0.004544201359074637,
+    "acc_norm,none": 0.32214698267277436,
+    "acc_norm_stderr,none": 0.004663439181148975,
+    "alias": "hellaswag"
+  }
+}

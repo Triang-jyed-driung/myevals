@@ -1,0 +1,485 @@
+{
+  "model": "RWKV-x060-World-7B-v3-20241112-ctx4096.pth",
+  "tasks": [
+    "cmmlu"
+  ],
+  "num_fewshot": 0,
+  "results": {
+    "cmmlu": {
+      "acc,none": 0.45717492661025727,
+      "acc_stderr,none": 0.004550344901918767,
+      "acc_norm,none": 0.45717492661025727,
+      "acc_norm_stderr,none": 0.004550344901918767,
+      "alias": "cmmlu"
+    },
+    "cmmlu_agronomy": {
+      "acc,none": 0.47928994082840237,
+      "acc_stderr,none": 0.038542732426637354,
+      "acc_norm,none": 0.47928994082840237,
+      "acc_norm_stderr,none": 0.038542732426637354,
+      "alias": " - cmmlu_agronomy"
+    },
+    "cmmlu_anatomy": {
+      "acc,none": 0.31756756756756754,
+      "acc_stderr,none": 0.038396287341496825,
+      "acc_norm,none": 0.31756756756756754,
+      "acc_norm_stderr,none": 0.038396287341496825,
+      "alias": " - cmmlu_anatomy"
+    },
+    "cmmlu_ancient_chinese": {
+      "acc,none": 0.2804878048780488,
+      "acc_stderr,none": 0.03518700228801573,
+      "acc_norm,none": 0.2804878048780488,
+      "acc_norm_stderr,none": 0.03518700228801573,
+      "alias": " - cmmlu_ancient_chinese"
+    },
+    "cmmlu_arts": {
+      "acc,none": 0.63125,
+      "acc_stderr,none": 0.03826204233503223,
+      "acc_norm,none": 0.63125,
+      "acc_norm_stderr,none": 0.03826204233503223,
+      "alias": " - cmmlu_arts"
+    },
+    "cmmlu_astronomy": {
+      "acc,none": 0.38181818181818183,
+      "acc_stderr,none": 0.03793713171165631,
+      "acc_norm,none": 0.38181818181818183,
+      "acc_norm_stderr,none": 0.03793713171165631,
+      "alias": " - cmmlu_astronomy"
+    },
+    "cmmlu_business_ethics": {
+      "acc,none": 0.4688995215311005,
+      "acc_stderr,none": 0.034601631258720296,
+      "acc_norm,none": 0.4688995215311005,
+      "acc_norm_stderr,none": 0.034601631258720296,
+      "alias": " - cmmlu_business_ethics"
+    },
+    "cmmlu_chinese_civil_service_exam": {
+      "acc,none": 0.44375,
+      "acc_stderr,none": 0.03940085379625946,
+      "acc_norm,none": 0.44375,
+      "acc_norm_stderr,none": 0.03940085379625946,
+      "alias": " - cmmlu_chinese_civil_service_exam"
+    },
+    "cmmlu_chinese_driving_rule": {
+      "acc,none": 0.5419847328244275,
+      "acc_stderr,none": 0.04369802690578757,
+      "acc_norm,none": 0.5419847328244275,
+      "acc_norm_stderr,none": 0.04369802690578757,
+      "alias": " - cmmlu_chinese_driving_rule"
+    },
+    "cmmlu_chinese_food_culture": {
+      "acc,none": 0.33088235294117646,
+      "acc_stderr,none": 0.04049684225945663,
+      "acc_norm,none": 0.33088235294117646,
+      "acc_norm_stderr,none": 0.04049684225945663,
+      "alias": " - cmmlu_chinese_food_culture"
+    },
+    "cmmlu_chinese_foreign_policy": {
+      "acc,none": 0.5327102803738317,
+      "acc_stderr,none": 0.04846025774523468,
+      "acc_norm,none": 0.5327102803738317,
+      "acc_norm_stderr,none": 0.04846025774523468,
+      "alias": " - cmmlu_chinese_foreign_policy"
+    },
+    "cmmlu_chinese_history": {
+      "acc,none": 0.5603715170278638,
+      "acc_stderr,none": 0.027660052586805168,
+      "acc_norm,none": 0.5603715170278638,
+      "acc_norm_stderr,none": 0.027660052586805168,
+      "alias": " - cmmlu_chinese_history"
+    },
+    "cmmlu_chinese_literature": {
+      "acc,none": 0.38235294117647056,
+      "acc_stderr,none": 0.034107853389047135,
+      "acc_norm,none": 0.38235294117647056,
+      "acc_norm_stderr,none": 0.034107853389047135,
+      "alias": " - cmmlu_chinese_literature"
+    },
+    "cmmlu_chinese_teacher_qualification": {
+      "acc,none": 0.5586592178770949,
+      "acc_stderr,none": 0.03721778421080525,
+      "acc_norm,none": 0.5586592178770949,
+      "acc_norm_stderr,none": 0.03721778421080525,
+      "alias": " - cmmlu_chinese_teacher_qualification"
+    },
+    "cmmlu_clinical_knowledge": {
+      "acc,none": 0.3628691983122363,
+      "acc_stderr,none": 0.031299208255302184,
+      "acc_norm,none": 0.3628691983122363,
+      "acc_norm_stderr,none": 0.031299208255302184,
+      "alias": " - cmmlu_clinical_knowledge"
+    },
+    "cmmlu_college_actuarial_science": {
+      "acc,none": 0.22641509433962265,
+      "acc_stderr,none": 0.04084247315337103,
+      "acc_norm,none": 0.22641509433962265,
+      "acc_norm_stderr,none": 0.04084247315337103,
+      "alias": " - cmmlu_college_actuarial_science"
+    },
+    "cmmlu_college_education": {
+      "acc,none": 0.5607476635514018,
+      "acc_stderr,none": 0.04820452900637912,
+      "acc_norm,none": 0.5607476635514018,
+      "acc_norm_stderr,none": 0.04820452900637912,
+      "alias": " - cmmlu_college_education"
+    },
+    "cmmlu_college_engineering_hydrology": {
+      "acc,none": 0.49056603773584906,
+      "acc_stderr,none": 0.04878631739837744,
+      "acc_norm,none": 0.49056603773584906,
+      "acc_norm_stderr,none": 0.04878631739837744,
+      "alias": " - cmmlu_college_engineering_hydrology"
+    },
+    "cmmlu_college_law": {
+      "acc,none": 0.32407407407407407,
+      "acc_stderr,none": 0.04524596007030053,
+      "acc_norm,none": 0.32407407407407407,
+      "acc_norm_stderr,none": 0.04524596007030053,
+      "alias": " - cmmlu_college_law"
+    },
+    "cmmlu_college_mathematics": {
+      "acc,none": 0.24761904761904763,
+      "acc_stderr,none": 0.04232473532055043,
+      "acc_norm,none": 0.24761904761904763,
+      "acc_norm_stderr,none": 0.04232473532055043,
+      "alias": " - cmmlu_college_mathematics"
+    },
+    "cmmlu_college_medical_statistics": {
+      "acc,none": 0.36792452830188677,
+      "acc_stderr,none": 0.04706187110761453,
+      "acc_norm,none": 0.36792452830188677,
+      "acc_norm_stderr,none": 0.04706187110761453,
+      "alias": " - cmmlu_college_medical_statistics"
+    },
+    "cmmlu_college_medicine": {
+      "acc,none": 0.4249084249084249,
+      "acc_stderr,none": 0.029973104080150068,
+      "acc_norm,none": 0.4249084249084249,
+      "acc_norm_stderr,none": 0.029973104080150068,
+      "alias": " - cmmlu_college_medicine"
+    },
+    "cmmlu_computer_science": {
+      "acc,none": 0.46078431372549017,
+      "acc_stderr,none": 0.03498501649369533,
+      "acc_norm,none": 0.46078431372549017,
+      "acc_norm_stderr,none": 0.03498501649369533,
+      "alias": " - cmmlu_computer_science"
+    },
+    "cmmlu_computer_security": {
+      "acc,none": 0.5614035087719298,
+      "acc_stderr,none": 0.038057975055904594,
+      "acc_norm,none": 0.5614035087719298,
+      "acc_norm_stderr,none": 0.038057975055904594,
+      "alias": " - cmmlu_computer_security"
+    },
+    "cmmlu_conceptual_physics": {
+      "acc,none": 0.4217687074829932,
+      "acc_stderr,none": 0.04087065002374963,
+      "acc_norm,none": 0.4217687074829932,
+      "acc_norm_stderr,none": 0.04087065002374963,
+      "alias": " - cmmlu_conceptual_physics"
+    },
+    "cmmlu_construction_project_management": {
+      "acc,none": 0.45323741007194246,
+      "acc_stderr,none": 0.042376270036392404,
+      "acc_norm,none": 0.45323741007194246,
+      "acc_norm_stderr,none": 0.042376270036392404,
+      "alias": " - cmmlu_construction_project_management"
+    },
+    "cmmlu_economics": {
+      "acc,none": 0.4528301886792453,
+      "acc_stderr,none": 0.03960045781124928,
+      "acc_norm,none": 0.4528301886792453,
+      "acc_norm_stderr,none": 0.03960045781124928,
+      "alias": " - cmmlu_economics"
+    },
+    "cmmlu_education": {
+      "acc,none": 0.5153374233128835,
+      "acc_stderr,none": 0.039265223787088396,
+      "acc_norm,none": 0.5153374233128835,
+      "acc_norm_stderr,none": 0.039265223787088396,
+      "alias": " - cmmlu_education"
+    },
+    "cmmlu_electrical_engineering": {
+      "acc,none": 0.4069767441860465,
+      "acc_stderr,none": 0.03756839173779931,
+      "acc_norm,none": 0.4069767441860465,
+      "acc_norm_stderr,none": 0.03756839173779931,
+      "alias": " - cmmlu_electrical_engineering"
+    },
+    "cmmlu_elementary_chinese": {
+      "acc,none": 0.4007936507936508,
+      "acc_stderr,none": 0.030932267624392547,
+      "acc_norm,none": 0.4007936507936508,
+      "acc_norm_stderr,none": 0.030932267624392547,
+      "alias": " - cmmlu_elementary_chinese"
+    },
+    "cmmlu_elementary_commonsense": {
+      "acc,none": 0.4444444444444444,
+      "acc_stderr,none": 0.035402943770953675,
+      "acc_norm,none": 0.4444444444444444,
+      "acc_norm_stderr,none": 0.035402943770953675,
+      "alias": " - cmmlu_elementary_commonsense"
+    },
+    "cmmlu_elementary_information_and_technology": {
+      "acc,none": 0.6260504201680672,
+      "acc_stderr,none": 0.031429466378837145,
+      "acc_norm,none": 0.6260504201680672,
+      "acc_norm_stderr,none": 0.031429466378837145,
+      "alias": " - cmmlu_elementary_information_and_technology"
+    },
+    "cmmlu_elementary_mathematics": {
+      "acc,none": 0.30434782608695654,
+      "acc_stderr,none": 0.030406290061389937,
+      "acc_norm,none": 0.30434782608695654,
+      "acc_norm_stderr,none": 0.030406290061389937,
+      "alias": " - cmmlu_elementary_mathematics"
+    },
+    "cmmlu_ethnology": {
+      "acc,none": 0.5111111111111111,
+      "acc_stderr,none": 0.043182754919779784,
+      "acc_norm,none": 0.5111111111111111,
+      "acc_norm_stderr,none": 0.043182754919779784,
+      "alias": " - cmmlu_ethnology"
+    },
+    "cmmlu_food_science": {
+      "acc,none": 0.46853146853146854,
+      "acc_stderr,none": 0.041875883974459,
+      "acc_norm,none": 0.46853146853146854,
+      "acc_norm_stderr,none": 0.041875883974459,
+      "alias": " - cmmlu_food_science"
+    },
+    "cmmlu_genetics": {
+      "acc,none": 0.4431818181818182,
+      "acc_stderr,none": 0.03755161736785979,
+      "acc_norm,none": 0.4431818181818182,
+      "acc_norm_stderr,none": 0.03755161736785979,
+      "alias": " - cmmlu_genetics"
+    },
+    "cmmlu_global_facts": {
+      "acc,none": 0.4697986577181208,
+      "acc_stderr,none": 0.04102470242364306,
+      "acc_norm,none": 0.4697986577181208,
+      "acc_norm_stderr,none": 0.04102470242364306,
+      "alias": " - cmmlu_global_facts"
+    },
+    "cmmlu_high_school_biology": {
+      "acc,none": 0.38461538461538464,
+      "acc_stderr,none": 0.0375346181903282,
+      "acc_norm,none": 0.38461538461538464,
+      "acc_norm_stderr,none": 0.0375346181903282,
+      "alias": " - cmmlu_high_school_biology"
+    },
+    "cmmlu_high_school_chemistry": {
+      "acc,none": 0.2878787878787879,
+      "acc_stderr,none": 0.039559076642353926,
+      "acc_norm,none": 0.2878787878787879,
+      "acc_norm_stderr,none": 0.039559076642353926,
+      "alias": " - cmmlu_high_school_chemistry"
+    },
+    "cmmlu_high_school_geography": {
+      "acc,none": 0.4745762711864407,
+      "acc_stderr,none": 0.04616522112086745,
+      "acc_norm,none": 0.4745762711864407,
+      "acc_norm_stderr,none": 0.04616522112086745,
+      "alias": " - cmmlu_high_school_geography"
+    },
+    "cmmlu_high_school_mathematics": {
+      "acc,none": 0.2865853658536585,
+      "acc_stderr,none": 0.03541638332993508,
+      "acc_norm,none": 0.2865853658536585,
+      "acc_norm_stderr,none": 0.03541638332993508,
+      "alias": " - cmmlu_high_school_mathematics"
+    },
+    "cmmlu_high_school_physics": {
+      "acc,none": 0.34545454545454546,
+      "acc_stderr,none": 0.045546196175410524,
+      "acc_norm,none": 0.34545454545454546,
+      "acc_norm_stderr,none": 0.045546196175410524,
+      "alias": " - cmmlu_high_school_physics"
+    },
+    "cmmlu_high_school_politics": {
+      "acc,none": 0.46853146853146854,
+      "acc_stderr,none": 0.041875883974459,
+      "acc_norm,none": 0.46853146853146854,
+      "acc_norm_stderr,none": 0.041875883974459,
+      "alias": " - cmmlu_high_school_politics"
+    },
+    "cmmlu_human_sexuality": {
+      "acc,none": 0.5238095238095238,
+      "acc_stderr,none": 0.04467062628403266,
+      "acc_norm,none": 0.5238095238095238,
+      "acc_norm_stderr,none": 0.04467062628403266,
+      "alias": " - cmmlu_human_sexuality"
+    },
+    "cmmlu_international_law": {
+      "acc,none": 0.3891891891891892,
+      "acc_stderr,none": 0.03594386960243728,
+      "acc_norm,none": 0.3891891891891892,
+      "acc_norm_stderr,none": 0.03594386960243728,
+      "alias": " - cmmlu_international_law"
+    },
+    "cmmlu_journalism": {
+      "acc,none": 0.5465116279069767,
+      "acc_stderr,none": 0.03807016210250966,
+      "acc_norm,none": 0.5465116279069767,
+      "acc_norm_stderr,none": 0.03807016210250966,
+      "alias": " - cmmlu_journalism"
+    },
+    "cmmlu_jurisprudence": {
+      "acc,none": 0.46472019464720193,
+      "acc_stderr,none": 0.02463169360972936,
+      "acc_norm,none": 0.46472019464720193,
+      "acc_norm_stderr,none": 0.02463169360972936,
+      "alias": " - cmmlu_jurisprudence"
+    },
+    "cmmlu_legal_and_moral_basis": {
+      "acc,none": 0.7476635514018691,
+      "acc_stderr,none": 0.029761395837436,
+      "acc_norm,none": 0.7476635514018691,
+      "acc_norm_stderr,none": 0.029761395837436,
+      "alias": " - cmmlu_legal_and_moral_basis"
+    },
+    "cmmlu_logical": {
+      "acc,none": 0.4634146341463415,
+      "acc_stderr,none": 0.0451465292863279,
+      "acc_norm,none": 0.4634146341463415,
+      "acc_norm_stderr,none": 0.0451465292863279,
+      "alias": " - cmmlu_logical"
+    },
+    "cmmlu_machine_learning": {
+      "acc,none": 0.4344262295081967,
+      "acc_stderr,none": 0.04506194823469704,
+      "acc_norm,none": 0.4344262295081967,
+      "acc_norm_stderr,none": 0.04506194823469704,
+      "alias": " - cmmlu_machine_learning"
+    },
+    "cmmlu_management": {
+      "acc,none": 0.580952380952381,
+      "acc_stderr,none": 0.03412941259257985,
+      "acc_norm,none": 0.580952380952381,
+      "acc_norm_stderr,none": 0.03412941259257985,
+      "alias": " - cmmlu_management"
+    },
+    "cmmlu_marketing": {
+      "acc,none": 0.5166666666666667,
+      "acc_stderr,none": 0.03735098678123468,
+      "acc_norm,none": 0.5166666666666667,
+      "acc_norm_stderr,none": 0.03735098678123468,
+      "alias": " - cmmlu_marketing"
+    },
+    "cmmlu_marxist_theory": {
+      "acc,none": 0.5396825396825397,
+      "acc_stderr,none": 0.03635121936293253,
+      "acc_norm,none": 0.5396825396825397,
+      "acc_norm_stderr,none": 0.03635121936293253,
+      "alias": " - cmmlu_marxist_theory"
+    },
+    "cmmlu_modern_chinese": {
+      "acc,none": 0.3706896551724138,
+      "acc_stderr,none": 0.04503900094657776,
+      "acc_norm,none": 0.3706896551724138,
+      "acc_norm_stderr,none": 0.04503900094657776,
+      "alias": " - cmmlu_modern_chinese"
+    },
+    "cmmlu_nutrition": {
+      "acc,none": 0.43448275862068964,
+      "acc_stderr,none": 0.041307408795554966,
+      "acc_norm,none": 0.43448275862068964,
+      "acc_norm_stderr,none": 0.041307408795554966,
+      "alias": " - cmmlu_nutrition"
+    },
+    "cmmlu_philosophy": {
+      "acc,none": 0.5523809523809524,
+      "acc_stderr,none": 0.04875924328817291,
+      "acc_norm,none": 0.5523809523809524,
+      "acc_norm_stderr,none": 0.04875924328817291,
+      "alias": " - cmmlu_philosophy"
+    },
+    "cmmlu_professional_accounting": {
+      "acc,none": 0.5257142857142857,
+      "acc_stderr,none": 0.03785474169043356,
+      "acc_norm,none": 0.5257142857142857,
+      "acc_norm_stderr,none": 0.03785474169043356,
+      "alias": " - cmmlu_professional_accounting"
+    },
+    "cmmlu_professional_law": {
+      "acc,none": 0.35071090047393366,
+      "acc_stderr,none": 0.0329294169227149,
+      "acc_norm,none": 0.35071090047393366,
+      "acc_norm_stderr,none": 0.0329294169227149,
+      "alias": " - cmmlu_professional_law"
+    },
+    "cmmlu_professional_medicine": {
+      "acc,none": 0.35106382978723405,
+      "acc_stderr,none": 0.024647813544807797,
+      "acc_norm,none": 0.35106382978723405,
+      "acc_norm_stderr,none": 0.024647813544807797,
+      "alias": " - cmmlu_professional_medicine"
+    },
+    "cmmlu_professional_psychology": {
+      "acc,none": 0.5344827586206896,
+      "acc_stderr,none": 0.03281925705411404,
+      "acc_norm,none": 0.5344827586206896,
+      "acc_norm_stderr,none": 0.03281925705411404,
+      "alias": " - cmmlu_professional_psychology"
+    },
+    "cmmlu_public_relations": {
+      "acc,none": 0.5172413793103449,
+      "acc_stderr,none": 0.03799168868945871,
+      "acc_norm,none": 0.5172413793103449,
+      "acc_norm_stderr,none": 0.03799168868945871,
+      "alias": " - cmmlu_public_relations"
+    },
+    "cmmlu_security_study": {
+      "acc,none": 0.5185185185185185,
+      "acc_stderr,none": 0.043163785995113245,
+      "acc_norm,none": 0.5185185185185185,
+      "acc_norm_stderr,none": 0.043163785995113245,
+      "alias": " - cmmlu_security_study"
+    },
+    "cmmlu_sociology": {
+      "acc,none": 0.4336283185840708,
+      "acc_stderr,none": 0.03303834808259587,
+      "acc_norm,none": 0.4336283185840708,
+      "acc_norm_stderr,none": 0.03303834808259587,
+      "alias": " - cmmlu_sociology"
+    },
+    "cmmlu_sports_science": {
+      "acc,none": 0.4666666666666667,
+      "acc_stderr,none": 0.0389565806527185,
+      "acc_norm,none": 0.4666666666666667,
+      "acc_norm_stderr,none": 0.0389565806527185,
+      "alias": " - cmmlu_sports_science"
+    },
+    "cmmlu_traditional_chinese_medicine": {
+      "acc,none": 0.3945945945945946,
+      "acc_stderr,none": 0.03603211886269591,
+      "acc_norm,none": 0.3945945945945946,
+      "acc_norm_stderr,none": 0.03603211886269591,
+      "alias": " - cmmlu_traditional_chinese_medicine"
+    },
+    "cmmlu_virology": {
+      "acc,none": 0.47337278106508873,
+      "acc_stderr,none": 0.03852109743620033,
+      "acc_norm,none": 0.47337278106508873,
+      "acc_norm_stderr,none": 0.03852109743620033,
+      "alias": " - cmmlu_virology"
+    },
+    "cmmlu_world_history": {
+      "acc,none": 0.5838509316770186,
+      "acc_stderr,none": 0.03896865898200244,
+      "acc_norm,none": 0.5838509316770186,
+      "acc_norm_stderr,none": 0.03896865898200244,
+      "alias": " - cmmlu_world_history"
+    },
+    "cmmlu_world_religions": {
+      "acc,none": 0.6,
+      "acc_stderr,none": 0.03885143449429057,
+      "acc_norm,none": 0.6,
+      "acc_norm_stderr,none": 0.03885143449429057,
+      "alias": " - cmmlu_world_religions"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+bootstrapping for stddev: perplexity
+bootstrapping for stddev: f1_score
+bootstrapping for stddev: matthews_corrcoef
+bootstrapping for stddev: f1_score
+hf (pretrained=EleutherAI/pythia-160m,dtype=float,trust_remote_code=True,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: 4
+|     Tasks      |Version|Filter|n-shot|  Metric  |   | Value |   |Stderr|
+|----------------|-------|------|-----:|----------|---|------:|---|-----:|
+|arc_challenge   |      1|none  |     0|acc       |↑  | 0.1945|±  |0.0116|
+|                |       |none  |     0|acc_norm  |↑  | 0.2363|±  |0.0124|
+|arc_easy        |      1|none  |     0|acc       |↑  | 0.4364|±  |0.0102|
+|                |       |none  |     0|acc_norm  |↑  | 0.3965|±  |0.0100|
+| - cola         |      1|none  |     0|mcc       |↑  | 0.0000|±  |0.0000|
+|glue            |N/A    |none  |     0|acc       |↑  | 0.3786|±  |0.0019|
+|                |       |none  |     0|f1        |↑  | 0.5409|±  |0.0025|
+|                |       |none  |     0|mcc       |↑  | 0.0000|±  |0.0000|
+|hellaswag       |      1|none  |     0|acc       |↑  | 0.2838|±  |0.0045|
+|                |       |none  |     0|acc_norm  |↑  | 0.3026|±  |0.0046|
+|lambada_openai  |      1|none  |     0|acc       |↑  | 0.3538|±  |0.0067|
+|                |       |none  |     0|perplexity|↓  |37.2553|±  |1.3998|
+| - mnli         |      1|none  |     0|acc       |↑  | 0.3545|±  |0.0048|
+| - mnli_mismatch|      1|none  |     0|acc       |↑  | 0.3526|±  |0.0048|
+| - mrpc         |      1|none  |     0|acc       |↑  | 0.6789|±  |0.0231|
+|                |       |none  |     0|f1        |↑  | 0.8088|±  |0.0164|
+|piqa            |      1|none  |     0|acc       |↑  | 0.6230|±  |0.0113|
+|                |       |none  |     0|acc_norm  |↑  | 0.6197|±  |0.0113|
+| - qnli         |      1|none  |     0|acc       |↑  | 0.4951|±  |0.0068|
+| - qqp          |      2|none  |     0|acc       |↑  | 0.3682|±  |0.0024|
+|                |       |none  |     0|f1        |↑  | 0.5382|±  |0.0026|
+| - rte          |      1|none  |     0|acc       |↑  | 0.5235|±  |0.0301|
+|sciq            |      1|none  |     0|acc       |↑  | 0.7540|±  |0.0136|
+|                |       |none  |     0|acc_norm  |↑  | 0.6770|±  |0.0148|
+| - sst2         |      1|none  |     0|acc       |↑  | 0.5092|±  |0.0169|
+|winogrande      |      1|none  |     0|acc       |↑  | 0.5130|±  |0.0140|
+| - wnli         |      2|none  |     0|acc       |↑  | 0.4366|±  |0.0593|
+
+|Groups|Version|Filter|n-shot|Metric|   |Value |   |Stderr|
+|------|-------|------|-----:|------|---|-----:|---|-----:|
+|glue  |N/A    |none  |     0|acc   |↑  |0.3786|±  |0.0019|
+|      |       |none  |     0|f1    |↑  |0.5409|±  |0.0025|
+|      |       |none  |     0|mcc   |↑  |0.0000|±  |0.0000|

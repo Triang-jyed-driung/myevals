@@ -1,0 +1,16 @@
+{
+  "model": "/home/zhangping/zrc/RWKV-x060-World-3B-v2.1-20240417-ctx4096",
+  "tasks": [
+    "gsm8k"
+  ],
+  "num_fewshot": 0,
+  "results": {
+    "gsm8k": {
+      "exact_match,strict-match": 0.0,
+      "exact_match_stderr,strict-match": 0.0,
+      "exact_match,flexible-extract": 0.0712661106899166,
+      "exact_match_stderr,flexible-extract": 0.0070864621279544925,
+      "alias": "gsm8k"
+    }
+  }
+}

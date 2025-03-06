@@ -1,0 +1,16 @@
+{
+  "model": "/home/zhangping/zrc/RWKV-x070-World-2.9B-v3-20250211-ctx4096",
+  "tasks": [
+    "gsm8k"
+  ],
+  "num_fewshot": 0,
+  "results": {
+    "gsm8k": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.3646702047005307,
+      "exact_match_stderr,strict-match": 0.013258428375662245,
+      "exact_match,flexible-extract": 0.39423805913570886,
+      "exact_match_stderr,flexible-extract": 0.013460852357095663
+    }
+  }
+}

@@ -1,0 +1,164 @@
+ninja: no work to do.
+Loading model - /home/zhangping/zrc/RWKV-4-Pile-430M-20220808-8066.pth
+RWKV_JIT_ON 1 RWKV_CUDA_ON 1 RESCALE_LAYER 0
+
+Loading /home/zhangping/zrc/RWKV-4-Pile-430M-20220808-8066.pth ...
+Model detected: v4.0
+Strategy: (total 24+1=25 layers)
+* cuda [float32, float32], store 25 layers
+0-cuda-float32-float32 1-cuda-float32-float32 2-cuda-float32-float32 3-cuda-float32-float32 4-cuda-float32-float32 5-cuda-float32-float32 6-cuda-float32-float32 7-cuda-float32-float32 8-cuda-float32-float32 9-cuda-float32-float32 10-cuda-float32-float32 11-cuda-float32-float32 12-cuda-float32-float32 13-cuda-float32-float32 14-cuda-float32-float32 15-cuda-float32-float32 16-cuda-float32-float32 17-cuda-float32-float32 18-cuda-float32-float32 19-cuda-float32-float32 20-cuda-float32-float32 21-cuda-float32-float32 22-cuda-float32-float32 23-cuda-float32-float32 24-cuda-float32-float32 
+emb.weight                        f32      cpu  50277  1024       
+blocks.0.ln1.weight               f32   cuda:0   1024             
+blocks.0.ln1.bias                 f32   cuda:0   1024             
+blocks.0.ln2.weight               f32   cuda:0   1024             
+blocks.0.ln2.bias                 f32   cuda:0   1024             
+blocks.0.att.time_decay           f32   cuda:0   1024             
+blocks.0.att.time_first           f32   cuda:0   1024             
+blocks.0.att.time_mix_k           f32   cuda:0   1024             
+blocks.0.att.time_mix_v           f32   cuda:0   1024             
+blocks.0.att.time_mix_r           f32   cuda:0   1024             
+blocks.0.att.key.weight           f32   cuda:0   1024  1024       
+blocks.0.att.value.weight         f32   cuda:0   1024  1024       
+blocks.0.att.receptance.weight    f32   cuda:0   1024  1024       
+blocks.0.att.output.weight        f32   cuda:0   1024  1024       
+blocks.0.ffn.time_mix_k           f32   cuda:0   1024             
+blocks.0.ffn.time_mix_r           f32   cuda:0   1024             
+blocks.0.ffn.key.weight           f32   cuda:0   1024  4096       
+blocks.0.ffn.receptance.weight    f32   cuda:0   1024  1024       
+blocks.0.ffn.value.weight         f32   cuda:0   4096  1024       
+............................................................................................................................................................................................................................................................................................................................................................................................................
+blocks.23.ln1.weight              f32   cuda:0   1024             
+blocks.23.ln1.bias                f32   cuda:0   1024             
+blocks.23.ln2.weight              f32   cuda:0   1024             
+blocks.23.ln2.bias                f32   cuda:0   1024             
+blocks.23.att.time_decay          f32   cuda:0   1024             
+blocks.23.att.time_first          f32   cuda:0   1024             
+blocks.23.att.time_mix_k          f32   cuda:0   1024             
+blocks.23.att.time_mix_v          f32   cuda:0   1024             
+blocks.23.att.time_mix_r          f32   cuda:0   1024             
+blocks.23.att.key.weight          f32   cuda:0   1024  1024       
+blocks.23.att.value.weight        f32   cuda:0   1024  1024       
+blocks.23.att.receptance.weight   f32   cuda:0   1024  1024       
+blocks.23.att.output.weight       f32   cuda:0   1024  1024       
+blocks.23.ffn.time_mix_k          f32   cuda:0   1024             
+blocks.23.ffn.time_mix_r          f32   cuda:0   1024             
+blocks.23.ffn.key.weight          f32   cuda:0   1024  4096       
+blocks.23.ffn.receptance.weight   f32   cuda:0   1024  1024       
+blocks.23.ffn.value.weight        f32   cuda:0   4096  1024       
+ln_out.weight                     f32   cuda:0   1024             
+ln_out.bias                       f32   cuda:0   1024             
+head.weight                       f32   cuda:0   1024 50277       
+RWKV_PAD [0]
+STOP_TOKEN [535]
+Running evaluation on ['hellaswag', 'lambada_openai', 'piqa', 'winogrande', 'arc_challenge', 'arc_easy', 'sciq', 'glue'] with 0-shot examples
+bootstrapping for stddev: f1_score
+bootstrapping for stddev: matthews_corrcoef
+bootstrapping for stddev: f1_score
+bootstrapping for stddev: perplexity
+{
+  "glue": {
+    "f1,none": 0.5399641153419859,
+    "f1_stderr,none": 0.0026425829969100997,
+    "mcc,none": -0.02339059069282274,
+    "mcc_stderr,none": 0.028727885386188756,
+    "acc,none": 0.37900488327775134,
+    "acc_stderr,none": 0.001856787615672055,
+    "alias": "glue"
+  },
+  "cola": {
+    "mcc,none": -0.02339059069282274,
+    "mcc_stderr,none": 0.028727885386188756,
+    "alias": " - cola"
+  },
+  "mnli": {
+    "acc,none": 0.3420275089149261,
+    "acc_stderr,none": 0.004788630862472729,
+    "alias": " - mnli"
+  },
+  "mnli_mismatch": {
+    "acc,none": 0.3449959316517494,
+    "acc_stderr,none": 0.0047943544385349686,
+    "alias": " - mnli_mismatch"
+  },
+  "mrpc": {
+    "acc,none": 0.6862745098039216,
+    "acc_stderr,none": 0.02299993627794339,
+    "f1,none": 0.8134110787172012,
+    "f1_stderr,none": 0.019127662300299664,
+    "alias": " - mrpc"
+  },
+  "qnli": {
+    "acc,none": 0.4933186893648179,
+    "acc_stderr,none": 0.006764806510150328,
+    "alias": " - qnli"
+  },
+  "qqp": {
+    "acc,none": 0.3688102893890675,
+    "acc_stderr,none": 0.0023995785443237075,
+    "f1,none": 0.5372046208810142,
+    "f1_stderr,none": 0.0026622466721281835,
+    "alias": " - qqp"
+  },
+  "rte": {
+    "acc,none": 0.5487364620938628,
+    "acc_stderr,none": 0.02995314924180891,
+    "alias": " - rte"
+  },
+  "sst2": {
+    "acc,none": 0.7327981651376146,
+    "acc_stderr,none": 0.014993493204432584,
+    "alias": " - sst2"
+  },
+  "wnli": {
+    "acc,none": 0.43661971830985913,
+    "acc_stderr,none": 0.05927935558412972,
+    "alias": " - wnli"
+  },
+  "sciq": {
+    "acc,none": 0.807,
+    "acc_stderr,none": 0.012486268734370044,
+    "acc_norm,none": 0.722,
+    "acc_norm_stderr,none": 0.014174516461485272,
+    "alias": "sciq"
+  },
+  "arc_easy": {
+    "acc,none": 0.5277777777777778,
+    "acc_stderr,none": 0.010243938285880985,
+    "acc_norm,none": 0.4696969696969697,
+    "acc_norm_stderr,none": 0.010240923608726409,
+    "alias": "arc_easy"
+  },
+  "arc_challenge": {
+    "acc,none": 0.24061433447098976,
+    "acc_stderr,none": 0.012491468532390682,
+    "acc_norm,none": 0.25170648464163825,
+    "acc_norm_stderr,none": 0.012682496334042911,
+    "alias": "arc_challenge"
+  },
+  "winogrande": {
+    "acc,none": 0.5201262825572218,
+    "acc_stderr,none": 0.014041096664344348,
+    "alias": "winogrande"
+  },
+  "piqa": {
+    "acc,none": 0.676822633297062,
+    "acc_stderr,none": 0.010911974124281996,
+    "acc_norm,none": 0.676278563656148,
+    "acc_norm_stderr,none": 0.01091676501070871,
+    "alias": "piqa"
+  },
+  "lambada_openai": {
+    "perplexity,none": 13.052246172823772,
+    "perplexity_stderr,none": 0.3751365353369714,
+    "acc,none": 0.45080535610324085,
+    "acc_stderr,none": 0.0069321787551012305,
+    "alias": "lambada_openai"
+  },
+  "hellaswag": {
+    "acc,none": 0.3397729535949014,
+    "acc_stderr,none": 0.004726640532562339,
+    "acc_norm,none": 0.4084843656642103,
+    "acc_norm_stderr,none": 0.004905489494004759,
+    "alias": "hellaswag"
+  }
+}

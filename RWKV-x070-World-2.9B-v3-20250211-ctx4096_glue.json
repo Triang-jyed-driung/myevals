@@ -1,0 +1,67 @@
+{
+  "model": "/home/zhangping/zrc/RWKV-x070-World-2.9B-v3-20250211-ctx4096",
+  "tasks": [
+    "glue"
+  ],
+  "num_fewshot": 0,
+  "results": {
+    "glue": {
+      "f1,none": 0.6928835730390357,
+      "f1_stderr,none": 0.0036436664119938256,
+      "acc,none": 0.6684581943782754,
+      "acc_stderr,none": 0.0016703858434417523,
+      "mcc,none": 0.05185503773957725,
+      "mcc_stderr,none": 0.032600944586408685,
+      "alias": "glue"
+    },
+    "cola": {
+      "mcc,none": 0.05185503773957725,
+      "mcc_stderr,none": 0.032600944586408685,
+      "alias": " - cola"
+    },
+    "mnli": {
+      "acc,none": 0.39449821701477333,
+      "acc_stderr,none": 0.004933523584717906,
+      "alias": " - mnli"
+    },
+    "mnli_mismatch": {
+      "acc,none": 0.4044955248169243,
+      "acc_stderr,none": 0.004949946753591583,
+      "alias": " - mnli_mismatch"
+    },
+    "mrpc": {
+      "acc,none": 0.7794117647058824,
+      "acc_stderr,none": 0.020553105287596057,
+      "f1,none": 0.8534201954397395,
+      "f1_stderr,none": 0.016157946331836814,
+      "alias": " - mrpc"
+    },
+    "qnli": {
+      "acc,none": 0.5678198791872597,
+      "acc_stderr,none": 0.006702886134456929,
+      "alias": " - qnli"
+    },
+    "qqp": {
+      "acc,none": 0.8064803363838734,
+      "acc_stderr,none": 0.0019647755361788884,
+      "f1,none": 0.6912635151132507,
+      "f1_stderr,none": 0.003676786809851292,
+      "alias": " - qqp"
+    },
+    "rte": {
+      "acc,none": 0.7472924187725631,
+      "acc_stderr,none": 0.026157719758464693,
+      "alias": " - rte"
+    },
+    "sst2": {
+      "acc,none": 0.893348623853211,
+      "acc_stderr,none": 0.010458867008246837,
+      "alias": " - sst2"
+    },
+    "wnli": {
+      "acc,none": 0.5352112676056338,
+      "acc_stderr,none": 0.0596130578497224,
+      "alias": " - wnli"
+    }
+  }
+}
