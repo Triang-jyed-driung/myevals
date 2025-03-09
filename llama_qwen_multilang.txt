@@ -1,0 +1,331 @@
+
+hf (pretrained=/home/zhangping/zrc/llama-3.2-1b,dtype=float,trust_remote_code=True,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto:4 (32,64,64,64,64)
+|         Tasks         |Version|Filter|n-shot|  Metric  |   | Value  |   |Stderr|
+|-----------------------|-------|------|-----:|----------|---|-------:|---|-----:|
+|lambada_multilingual   |N/A    |none  |     0|acc       |↑  |  0.3904|±  |0.0029|
+|                       |       |none  |     0|perplexity|↓  | 80.8751|±  |2.4867|
+| - lambada_openai_mt_de|      1|none  |     0|acc       |↑  |  0.3287|±  |0.0065|
+|                       |       |none  |     0|perplexity|↓  | 87.5065|±  |5.2831|
+| - lambada_openai_mt_en|      1|none  |     0|acc       |↑  |  0.6297|±  |0.0067|
+|                       |       |none  |     0|perplexity|↓  |  5.7268|±  |0.1391|
+| - lambada_openai_mt_es|      1|none  |     0|acc       |↑  |  0.2300|±  |0.0059|
+|                       |       |none  |     0|perplexity|↓  |162.3192|±  |9.2849|
+| - lambada_openai_mt_fr|      1|none  |     0|acc       |↑  |  0.3939|±  |0.0068|
+|                       |       |none  |     0|perplexity|↓  | 62.9702|±  |3.6146|
+| - lambada_openai_mt_it|      1|none  |     0|acc       |↑  |  0.3697|±  |0.0067|
+|                       |       |none  |     0|perplexity|↓  | 85.8530|±  |5.2329|
+| - paws_de             |      0|none  |     0|acc       |↑  |  0.4630|±  |0.0112|
+| - paws_en             |      0|none  |     0|acc       |↑  |  0.4075|±  |0.0110|
+| - paws_es             |      0|none  |     0|acc       |↑  |  0.4290|±  |0.0111|
+| - paws_fr             |      0|none  |     0|acc       |↑  |  0.4885|±  |0.0112|
+| - paws_ja             |      0|none  |     0|acc       |↑  |  0.4925|±  |0.0112|
+| - paws_ko             |      0|none  |     0|acc       |↑  |  0.4735|±  |0.0112|
+| - paws_zh             |      0|none  |     0|acc       |↑  |  0.5130|±  |0.0112|
+|pawsx                  |N/A    |none  |     0|acc       |↑  |  0.4667|±  |0.0042|
+|xcopa                  |N/A    |none  |     0|acc       |↑  |  0.5529|±  |0.0067|
+| - xcopa_et            |      1|none  |     0|acc       |↑  |  0.4960|±  |0.0224|
+| - xcopa_ht            |      1|none  |     0|acc       |↑  |  0.5140|±  |0.0224|
+| - xcopa_id            |      1|none  |     0|acc       |↑  |  0.5820|±  |0.0221|
+| - xcopa_it            |      1|none  |     0|acc       |↑  |  0.5820|±  |0.0221|
+| - xcopa_qu            |      1|none  |     0|acc       |↑  |  0.5020|±  |0.0224|
+| - xcopa_sw            |      1|none  |     0|acc       |↑  |  0.5240|±  |0.0224|
+| - xcopa_ta            |      1|none  |     0|acc       |↑  |  0.5540|±  |0.0223|
+| - xcopa_th            |      1|none  |     0|acc       |↑  |  0.5540|±  |0.0223|
+| - xcopa_tr            |      1|none  |     0|acc       |↑  |  0.5560|±  |0.0222|
+| - xcopa_vi            |      1|none  |     0|acc       |↑  |  0.6300|±  |0.0216|
+| - xcopa_zh            |      1|none  |     0|acc       |↑  |  0.5880|±  |0.0220|
+|xnli                   |N/A    |none  |     0|acc       |↑  |  0.4060|±  |0.0024|
+| - xnli_ar             |      1|none  |     0|acc       |↑  |  0.3317|±  |0.0094|
+| - xnli_bg             |      1|none  |     0|acc       |↑  |  0.4024|±  |0.0098|
+| - xnli_de             |      1|none  |     0|acc       |↑  |  0.4635|±  |0.0100|
+| - xnli_el             |      1|none  |     0|acc       |↑  |  0.3739|±  |0.0097|
+| - xnli_en             |      1|none  |     0|acc       |↑  |  0.5470|±  |0.0100|
+| - xnli_es             |      1|none  |     0|acc       |↑  |  0.4088|±  |0.0099|
+| - xnli_eu             |      1|none  |     0|acc       |↑  |  0.3651|±  |0.0068|
+| - xnli_fr             |      1|none  |     0|acc       |↑  |  0.4703|±  |0.0100|
+| - xnli_hi             |      1|none  |     0|acc       |↑  |  0.4185|±  |0.0099|
+| - xnli_ru             |      1|none  |     0|acc       |↑  |  0.4767|±  |0.0100|
+| - xnli_sw             |      1|none  |     0|acc       |↑  |  0.3442|±  |0.0095|
+| - xnli_th             |      1|none  |     0|acc       |↑  |  0.4020|±  |0.0098|
+| - xnli_tr             |      1|none  |     0|acc       |↑  |  0.4426|±  |0.0100|
+| - xnli_ur             |      1|none  |     0|acc       |↑  |  0.3373|±  |0.0095|
+| - xnli_vi             |      1|none  |     0|acc       |↑  |  0.4133|±  |0.0099|
+| - xnli_zh             |      1|none  |     0|acc       |↑  |  0.3410|±  |0.0095|
+|xstorycloze            |N/A    |none  |     0|acc       |↑  |  0.5659|±  |0.0038|
+| - xstorycloze_ar      |      1|none  |     0|acc       |↑  |  0.5122|±  |0.0129|
+| - xstorycloze_en      |      1|none  |     0|acc       |↑  |  0.7101|±  |0.0117|
+| - xstorycloze_es      |      1|none  |     0|acc       |↑  |  0.6135|±  |0.0125|
+| - xstorycloze_eu      |      1|none  |     0|acc       |↑  |  0.5030|±  |0.0129|
+| - xstorycloze_hi      |      1|none  |     0|acc       |↑  |  0.5652|±  |0.0128|
+| - xstorycloze_id      |      1|none  |     0|acc       |↑  |  0.5877|±  |0.0127|
+| - xstorycloze_my      |      1|none  |     0|acc       |↑  |  0.4970|±  |0.0129|
+| - xstorycloze_ru      |      1|none  |     0|acc       |↑  |  0.5996|±  |0.0126|
+| - xstorycloze_sw      |      1|none  |     0|acc       |↑  |  0.5056|±  |0.0129|
+| - xstorycloze_te      |      1|none  |     0|acc       |↑  |  0.5486|±  |0.0128|
+| - xstorycloze_zh      |      1|none  |     0|acc       |↑  |  0.5817|±  |0.0127|
+|xwinograd              |N/A    |none  |     0|acc       |↑  |  0.7224|±  |0.0066|
+| - xwinograd_en        |      1|none  |     0|acc       |↑  |  0.8125|±  |0.0081|
+| - xwinograd_fr        |      1|none  |     0|acc       |↑  |  0.6386|±  |0.0531|
+| - xwinograd_jp        |      1|none  |     0|acc       |↑  |  0.5954|±  |0.0159|
+| - xwinograd_pt        |      1|none  |     0|acc       |↑  |  0.6692|±  |0.0291|
+| - xwinograd_ru        |      1|none  |     0|acc       |↑  |  0.6127|±  |0.0275|
+| - xwinograd_zh        |      1|none  |     0|acc       |↑  |  0.6587|±  |0.0211|
+
+|       Groups       |Version|Filter|n-shot|  Metric  |   | Value |   |Stderr|
+|--------------------|-------|------|-----:|----------|---|------:|---|-----:|
+|lambada_multilingual|N/A    |none  |     0|acc       |↑  | 0.3904|±  |0.0029|
+|                    |       |none  |     0|perplexity|↓  |80.8751|±  |2.4867|
+|pawsx               |N/A    |none  |     0|acc       |↑  | 0.4667|±  |0.0042|
+|xcopa               |N/A    |none  |     0|acc       |↑  | 0.5529|±  |0.0067|
+|xnli                |N/A    |none  |     0|acc       |↑  | 0.4060|±  |0.0024|
+|xstorycloze         |N/A    |none  |     0|acc       |↑  | 0.5659|±  |0.0038|
+|xwinograd           |N/A    |none  |     0|acc       |↑  | 0.7224|±  |0.0066|
+
+2025-02-26:02:16:10,123 INFO     [evaluation_tracker.py:240] Output path not provided, skipping saving results aggregated
+hf (pretrained=Qwen/Qwen2.5-1.5B,dtype=float,trust_remote_code=True,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto:4 (32,64,64,64,64)
+|         Tasks         |Version|Filter|n-shot|  Metric  |   | Value  |   |Stderr|
+|-----------------------|-------|------|-----:|----------|---|-------:|---|-----:|
+|lambada_multilingual   |N/A    |none  |     0|acc       |↑  |  0.4001|±  |0.0029|
+|                       |       |none  |     0|perplexity|↓  | 74.1297|±  |2.3075|
+| - lambada_openai_mt_de|      1|none  |     0|acc       |↑  |  0.3491|±  |0.0066|
+|                       |       |none  |     0|perplexity|↓  | 80.6580|±  |4.9818|
+| - lambada_openai_mt_en|      1|none  |     0|acc       |↑  |  0.6295|±  |0.0067|
+|                       |       |none  |     0|perplexity|↓  |  5.6771|±  |0.1455|
+| - lambada_openai_mt_es|      1|none  |     0|acc       |↑  |  0.2234|±  |0.0058|
+|                       |       |none  |     0|perplexity|↓  |153.1893|±  |8.7395|
+| - lambada_openai_mt_fr|      1|none  |     0|acc       |↑  |  0.4033|±  |0.0068|
+|                       |       |none  |     0|perplexity|↓  | 54.8367|±  |3.0986|
+| - lambada_openai_mt_it|      1|none  |     0|acc       |↑  |  0.3951|±  |0.0068|
+|                       |       |none  |     0|perplexity|↓  | 76.2875|±  |4.7213|
+| - paws_de             |      0|none  |     0|acc       |↑  |  0.4085|±  |0.0110|
+| - paws_en             |      0|none  |     0|acc       |↑  |  0.4140|±  |0.0110|
+| - paws_es             |      0|none  |     0|acc       |↑  |  0.4160|±  |0.0110|
+| - paws_fr             |      0|none  |     0|acc       |↑  |  0.4965|±  |0.0112|
+| - paws_ja             |      0|none  |     0|acc       |↑  |  0.5450|±  |0.0111|
+| - paws_ko             |      0|none  |     0|acc       |↑  |  0.4785|±  |0.0112|
+| - paws_zh             |      0|none  |     0|acc       |↑  |  0.4515|±  |0.0111|
+|pawsx                  |N/A    |none  |     0|acc       |↑  |  0.4586|±  |0.0042|
+|xcopa                  |N/A    |none  |     0|acc       |↑  |  0.5736|±  |0.0066|
+| - xcopa_et            |      1|none  |     0|acc       |↑  |  0.4880|±  |0.0224|
+| - xcopa_ht            |      1|none  |     0|acc       |↑  |  0.5100|±  |0.0224|
+| - xcopa_id            |      1|none  |     0|acc       |↑  |  0.6520|±  |0.0213|
+| - xcopa_it            |      1|none  |     0|acc       |↑  |  0.6160|±  |0.0218|
+| - xcopa_qu            |      1|none  |     0|acc       |↑  |  0.5060|±  |0.0224|
+| - xcopa_sw            |      1|none  |     0|acc       |↑  |  0.5360|±  |0.0223|
+| - xcopa_ta            |      1|none  |     0|acc       |↑  |  0.5560|±  |0.0222|
+| - xcopa_th            |      1|none  |     0|acc       |↑  |  0.5580|±  |0.0222|
+| - xcopa_tr            |      1|none  |     0|acc       |↑  |  0.5440|±  |0.0223|
+| - xcopa_vi            |      1|none  |     0|acc       |↑  |  0.6560|±  |0.0213|
+| - xcopa_zh            |      1|none  |     0|acc       |↑  |  0.6880|±  |0.0207|
+|xnli                   |N/A    |none  |     0|acc       |↑  |  0.3976|±  |0.0024|
+| - xnli_ar             |      1|none  |     0|acc       |↑  |  0.3426|±  |0.0095|
+| - xnli_bg             |      1|none  |     0|acc       |↑  |  0.3707|±  |0.0097|
+| - xnli_de             |      1|none  |     0|acc       |↑  |  0.4442|±  |0.0100|
+| - xnli_el             |      1|none  |     0|acc       |↑  |  0.3486|±  |0.0096|
+| - xnli_en             |      1|none  |     0|acc       |↑  |  0.5161|±  |0.0100|
+| - xnli_es             |      1|none  |     0|acc       |↑  |  0.4249|±  |0.0099|
+| - xnli_eu             |      1|none  |     0|acc       |↑  |  0.3355|±  |0.0067|
+| - xnli_fr             |      1|none  |     0|acc       |↑  |  0.4482|±  |0.0100|
+| - xnli_hi             |      1|none  |     0|acc       |↑  |  0.3807|±  |0.0097|
+| - xnli_ru             |      1|none  |     0|acc       |↑  |  0.4590|±  |0.0100|
+| - xnli_sw             |      1|none  |     0|acc       |↑  |  0.3430|±  |0.0095|
+| - xnli_th             |      1|none  |     0|acc       |↑  |  0.4369|±  |0.0099|
+| - xnli_tr             |      1|none  |     0|acc       |↑  |  0.3996|±  |0.0098|
+| - xnli_ur             |      1|none  |     0|acc       |↑  |  0.3341|±  |0.0095|
+| - xnli_vi             |      1|none  |     0|acc       |↑  |  0.4715|±  |0.0100|
+| - xnli_zh             |      1|none  |     0|acc       |↑  |  0.3695|±  |0.0097|
+|xstorycloze            |N/A    |none  |     0|acc       |↑  |  0.5767|±  |0.0038|
+| - xstorycloze_ar      |      1|none  |     0|acc       |↑  |  0.5506|±  |0.0128|
+| - xstorycloze_en      |      1|none  |     0|acc       |↑  |  0.7459|±  |0.0112|
+| - xstorycloze_es      |      1|none  |     0|acc       |↑  |  0.6439|±  |0.0123|
+| - xstorycloze_eu      |      1|none  |     0|acc       |↑  |  0.5017|±  |0.0129|
+| - xstorycloze_hi      |      1|none  |     0|acc       |↑  |  0.5069|±  |0.0129|
+| - xstorycloze_id      |      1|none  |     0|acc       |↑  |  0.6069|±  |0.0126|
+| - xstorycloze_my      |      1|none  |     0|acc       |↑  |  0.4937|±  |0.0129|
+| - xstorycloze_ru      |      1|none  |     0|acc       |↑  |  0.6254|±  |0.0125|
+| - xstorycloze_sw      |      1|none  |     0|acc       |↑  |  0.5030|±  |0.0129|
+| - xstorycloze_te      |      1|none  |     0|acc       |↑  |  0.5381|±  |0.0128|
+| - xstorycloze_zh      |      1|none  |     0|acc       |↑  |  0.6281|±  |0.0124|
+|xwinograd              |N/A    |none  |     0|acc       |↑  |  0.7577|±  |0.0063|
+| - xwinograd_en        |      1|none  |     0|acc       |↑  |  0.8206|±  |0.0080|
+| - xwinograd_fr        |      1|none  |     0|acc       |↑  |  0.6265|±  |0.0534|
+| - xwinograd_jp        |      1|none  |     0|acc       |↑  |  0.6517|±  |0.0154|
+| - xwinograd_pt        |      1|none  |     0|acc       |↑  |  0.6996|±  |0.0283|
+| - xwinograd_ru        |      1|none  |     0|acc       |↑  |  0.6667|±  |0.0266|
+| - xwinograd_zh        |      1|none  |     0|acc       |↑  |  0.7778|±  |0.0185|
+
+|       Groups       |Version|Filter|n-shot|  Metric  |   | Value |   |Stderr|
+|--------------------|-------|------|-----:|----------|---|------:|---|-----:|
+|lambada_multilingual|N/A    |none  |     0|acc       |↑  | 0.4001|±  |0.0029|
+|                    |       |none  |     0|perplexity|↓  |74.1297|±  |2.3075|
+|pawsx               |N/A    |none  |     0|acc       |↑  | 0.4586|±  |0.0042|
+|xcopa               |N/A    |none  |     0|acc       |↑  | 0.5736|±  |0.0066|
+|xnli                |N/A    |none  |     0|acc       |↑  | 0.3976|±  |0.0024|
+|xstorycloze         |N/A    |none  |     0|acc       |↑  | 0.5767|±  |0.0038|
+|xwinograd           |N/A    |none  |     0|acc       |↑  | 0.7577|±  |0.0063|
+
+hf (pretrained=/home/zhangping/zrc/llama-3.2-3b,dtype=float,trust_remote_code=True,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto:4 (16,64,64,64,64)
+|         Tasks         |Version|Filter|n-shot|  Metric  |   | Value |   |Stderr|
+|-----------------------|-------|------|-----:|----------|---|------:|---|-----:|
+|lambada_multilingual   |N/A    |none  |     0|acc       |↑  | 0.4586|±  |0.0030|
+|                       |       |none  |     0|perplexity|↓  |43.2951|±  |1.2800|
+| - lambada_openai_mt_de|      1|none  |     0|acc       |↑  | 0.3920|±  |0.0068|
+|                       |       |none  |     0|perplexity|↓  |49.9043|±  |2.9209|
+| - lambada_openai_mt_en|      1|none  |     0|acc       |↑  | 0.7054|±  |0.0064|
+|                       |       |none  |     0|perplexity|↓  | 3.9425|±  |0.0828|
+| - lambada_openai_mt_es|      1|none  |     0|acc       |↑  | 0.2643|±  |0.0061|
+|                       |       |none  |     0|perplexity|↓  |91.0715|±  |4.9204|
+| - lambada_openai_mt_fr|      1|none  |     0|acc       |↑  | 0.4774|±  |0.0070|
+|                       |       |none  |     0|perplexity|↓  |30.9871|±  |1.6629|
+| - lambada_openai_mt_it|      1|none  |     0|acc       |↑  | 0.4537|±  |0.0069|
+|                       |       |none  |     0|perplexity|↓  |40.5700|±  |2.3340|
+| - paws_de             |      0|none  |     0|acc       |↑  | 0.3525|±  |0.0107|
+| - paws_en             |      0|none  |     0|acc       |↑  | 0.3105|±  |0.0103|
+| - paws_es             |      0|none  |     0|acc       |↑  | 0.3700|±  |0.0108|
+| - paws_fr             |      0|none  |     0|acc       |↑  | 0.4495|±  |0.0111|
+| - paws_ja             |      0|none  |     0|acc       |↑  | 0.4505|±  |0.0111|
+| - paws_ko             |      0|none  |     0|acc       |↑  | 0.4885|±  |0.0112|
+| - paws_zh             |      0|none  |     0|acc       |↑  | 0.4550|±  |0.0111|
+|pawsx                  |N/A    |none  |     0|acc       |↑  | 0.4109|±  |0.0041|
+|xcopa                  |N/A    |none  |     0|acc       |↑  | 0.5853|±  |0.0066|
+| - xcopa_et            |      1|none  |     0|acc       |↑  | 0.5140|±  |0.0224|
+| - xcopa_ht            |      1|none  |     0|acc       |↑  | 0.5220|±  |0.0224|
+| - xcopa_id            |      1|none  |     0|acc       |↑  | 0.6660|±  |0.0211|
+| - xcopa_it            |      1|none  |     0|acc       |↑  | 0.6840|±  |0.0208|
+| - xcopa_qu            |      1|none  |     0|acc       |↑  | 0.4880|±  |0.0224|
+| - xcopa_sw            |      1|none  |     0|acc       |↑  | 0.5220|±  |0.0224|
+| - xcopa_ta            |      1|none  |     0|acc       |↑  | 0.5860|±  |0.0220|
+| - xcopa_th            |      1|none  |     0|acc       |↑  | 0.5800|±  |0.0221|
+| - xcopa_tr            |      1|none  |     0|acc       |↑  | 0.5680|±  |0.0222|
+| - xcopa_vi            |      1|none  |     0|acc       |↑  | 0.6700|±  |0.0210|
+| - xcopa_zh            |      1|none  |     0|acc       |↑  | 0.6380|±  |0.0215|
+|xnli                   |N/A    |none  |     0|acc       |↑  | 0.4369|±  |0.0024|
+| - xnli_ar             |      1|none  |     0|acc       |↑  | 0.3373|±  |0.0095|
+| - xnli_bg             |      1|none  |     0|acc       |↑  | 0.4458|±  |0.0100|
+| - xnli_de             |      1|none  |     0|acc       |↑  | 0.4960|±  |0.0100|
+| - xnli_el             |      1|none  |     0|acc       |↑  | 0.3779|±  |0.0097|
+| - xnli_en             |      1|none  |     0|acc       |↑  | 0.5502|±  |0.0100|
+| - xnli_es             |      1|none  |     0|acc       |↑  | 0.4663|±  |0.0100|
+| - xnli_eu             |      1|none  |     0|acc       |↑  | 0.3962|±  |0.0069|
+| - xnli_fr             |      1|none  |     0|acc       |↑  | 0.4863|±  |0.0100|
+| - xnli_hi             |      1|none  |     0|acc       |↑  | 0.4538|±  |0.0100|
+| - xnli_ru             |      1|none  |     0|acc       |↑  | 0.5040|±  |0.0100|
+| - xnli_sw             |      1|none  |     0|acc       |↑  | 0.3956|±  |0.0098|
+| - xnli_th             |      1|none  |     0|acc       |↑  | 0.4325|±  |0.0099|
+| - xnli_tr             |      1|none  |     0|acc       |↑  | 0.4695|±  |0.0100|
+| - xnli_ur             |      1|none  |     0|acc       |↑  | 0.3402|±  |0.0095|
+| - xnli_vi             |      1|none  |     0|acc       |↑  | 0.4659|±  |0.0100|
+| - xnli_zh             |      1|none  |     0|acc       |↑  | 0.4149|±  |0.0099|
+|xstorycloze            |N/A    |none  |     0|acc       |↑  | 0.6057|±  |0.0038|
+| - xstorycloze_ar      |      1|none  |     0|acc       |↑  | 0.5539|±  |0.0128|
+| - xstorycloze_en      |      1|none  |     0|acc       |↑  | 0.7545|±  |0.0111|
+| - xstorycloze_es      |      1|none  |     0|acc       |↑  | 0.6724|±  |0.0121|
+| - xstorycloze_eu      |      1|none  |     0|acc       |↑  | 0.5314|±  |0.0128|
+| - xstorycloze_hi      |      1|none  |     0|acc       |↑  | 0.6075|±  |0.0126|
+| - xstorycloze_id      |      1|none  |     0|acc       |↑  | 0.6347|±  |0.0124|
+| - xstorycloze_my      |      1|none  |     0|acc       |↑  | 0.5003|±  |0.0129|
+| - xstorycloze_ru      |      1|none  |     0|acc       |↑  | 0.6592|±  |0.0122|
+| - xstorycloze_sw      |      1|none  |     0|acc       |↑  | 0.5367|±  |0.0128|
+| - xstorycloze_te      |      1|none  |     0|acc       |↑  | 0.5804|±  |0.0127|
+| - xstorycloze_zh      |      1|none  |     0|acc       |↑  | 0.6314|±  |0.0124|
+|xwinograd              |N/A    |none  |     0|acc       |↑  | 0.7919|±  |0.0060|
+| - xwinograd_en        |      1|none  |     0|acc       |↑  | 0.8581|±  |0.0072|
+| - xwinograd_fr        |      1|none  |     0|acc       |↑  | 0.7108|±  |0.0501|
+| - xwinograd_jp        |      1|none  |     0|acc       |↑  | 0.7205|±  |0.0145|
+| - xwinograd_pt        |      1|none  |     0|acc       |↑  | 0.7452|±  |0.0269|
+| - xwinograd_ru        |      1|none  |     0|acc       |↑  | 0.6857|±  |0.0262|
+| - xwinograd_zh        |      1|none  |     0|acc       |↑  | 0.7262|±  |0.0199|
+
+|       Groups       |Version|Filter|n-shot|  Metric  |   | Value |   |Stderr|
+|--------------------|-------|------|-----:|----------|---|------:|---|-----:|
+|lambada_multilingual|N/A    |none  |     0|acc       |↑  | 0.4586|±  |0.0030|
+|                    |       |none  |     0|perplexity|↓  |43.2951|±  |1.2800|
+|pawsx               |N/A    |none  |     0|acc       |↑  | 0.4109|±  |0.0041|
+|xcopa               |N/A    |none  |     0|acc       |↑  | 0.5853|±  |0.0066|
+|xnli                |N/A    |none  |     0|acc       |↑  | 0.4369|±  |0.0024|
+|xstorycloze         |N/A    |none  |     0|acc       |↑  | 0.6057|±  |0.0038|
+|xwinograd           |N/A    |none  |     0|acc       |↑  | 0.7919|±  |0.0060|
+
+
+
+hf (pretrained=Qwen/Qwen2.5-3B,dtype=float,trust_remote_code=True,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto:4 (32,64,64,64,64)
+|         Tasks         |Version|Filter|n-shot|  Metric  |   | Value |   |Stderr|
+|-----------------------|-------|------|-----:|----------|---|------:|---|-----:|
+|lambada_multilingual   |N/A    |none  |     0|acc       |↑  | 0.4347|±  |0.0030|
+|                       |       |none  |     0|perplexity|↓  |51.4735|±  |1.5222|
+| - lambada_openai_mt_de|      1|none  |     0|acc       |↑  | 0.3736|±  |0.0067|
+|                       |       |none  |     0|perplexity|↓  |61.0501|±  |3.6478|
+| - lambada_openai_mt_en|      1|none  |     0|acc       |↑  | 0.6715|±  |0.0065|
+|                       |       |none  |     0|perplexity|↓  | 4.6137|±  |0.1095|
+| - lambada_openai_mt_es|      1|none  |     0|acc       |↑  | 0.2591|±  |0.0061|
+|                       |       |none  |     0|perplexity|↓  |99.7598|±  |5.4857|
+| - lambada_openai_mt_fr|      1|none  |     0|acc       |↑  | 0.4388|±  |0.0069|
+|                       |       |none  |     0|perplexity|↓  |39.3861|±  |2.1420|
+| - lambada_openai_mt_it|      1|none  |     0|acc       |↑  | 0.4308|±  |0.0069|
+|                       |       |none  |     0|perplexity|↓  |52.5578|±  |3.1508|
+| - paws_de             |      0|none  |     0|acc       |↑  | 0.4530|±  |0.0111|
+| - paws_en             |      0|none  |     0|acc       |↑  | 0.4230|±  |0.0110|
+| - paws_es             |      0|none  |     0|acc       |↑  | 0.4600|±  |0.0111|
+| - paws_fr             |      0|none  |     0|acc       |↑  | 0.5200|±  |0.0112|
+| - paws_ja             |      0|none  |     0|acc       |↑  | 0.5350|±  |0.0112|
+| - paws_ko             |      0|none  |     0|acc       |↑  | 0.5190|±  |0.0112|
+| - paws_zh             |      0|none  |     0|acc       |↑  | 0.4740|±  |0.0112|
+|pawsx                  |N/A    |none  |     0|acc       |↑  | 0.4834|±  |0.0042|
+|xcopa                  |N/A    |none  |     0|acc       |↑  | 0.5900|±  |0.0065|
+| - xcopa_et            |      1|none  |     0|acc       |↑  | 0.4800|±  |0.0224|
+| - xcopa_ht            |      1|none  |     0|acc       |↑  | 0.5040|±  |0.0224|
+| - xcopa_id            |      1|none  |     0|acc       |↑  | 0.6720|±  |0.0210|
+| - xcopa_it            |      1|none  |     0|acc       |↑  | 0.6740|±  |0.0210|
+| - xcopa_qu            |      1|none  |     0|acc       |↑  | 0.5160|±  |0.0224|
+| - xcopa_sw            |      1|none  |     0|acc       |↑  | 0.5360|±  |0.0223|
+| - xcopa_ta            |      1|none  |     0|acc       |↑  | 0.5580|±  |0.0222|
+| - xcopa_th            |      1|none  |     0|acc       |↑  | 0.5620|±  |0.0222|
+| - xcopa_tr            |      1|none  |     0|acc       |↑  | 0.5500|±  |0.0223|
+| - xcopa_vi            |      1|none  |     0|acc       |↑  | 0.7140|±  |0.0202|
+| - xcopa_zh            |      1|none  |     0|acc       |↑  | 0.7240|±  |0.0200|
+|xnli                   |N/A    |none  |     0|acc       |↑  | 0.3811|±  |0.0024|
+| - xnli_ar             |      1|none  |     0|acc       |↑  | 0.3361|±  |0.0095|
+| - xnli_bg             |      1|none  |     0|acc       |↑  | 0.3787|±  |0.0097|
+| - xnli_de             |      1|none  |     0|acc       |↑  | 0.4309|±  |0.0099|
+| - xnli_el             |      1|none  |     0|acc       |↑  | 0.3281|±  |0.0094|
+| - xnli_en             |      1|none  |     0|acc       |↑  | 0.4719|±  |0.0100|
+| - xnli_es             |      1|none  |     0|acc       |↑  | 0.3827|±  |0.0097|
+| - xnli_eu             |      1|none  |     0|acc       |↑  | 0.3505|±  |0.0067|
+| - xnli_fr             |      1|none  |     0|acc       |↑  | 0.4446|±  |0.0100|
+| - xnli_hi             |      1|none  |     0|acc       |↑  | 0.3482|±  |0.0095|
+| - xnli_ru             |      1|none  |     0|acc       |↑  | 0.4201|±  |0.0099|
+| - xnli_sw             |      1|none  |     0|acc       |↑  | 0.3655|±  |0.0097|
+| - xnli_th             |      1|none  |     0|acc       |↑  | 0.4020|±  |0.0098|
+| - xnli_tr             |      1|none  |     0|acc       |↑  | 0.3799|±  |0.0097|
+| - xnli_ur             |      1|none  |     0|acc       |↑  | 0.3361|±  |0.0095|
+| - xnli_vi             |      1|none  |     0|acc       |↑  | 0.3984|±  |0.0098|
+| - xnli_zh             |      1|none  |     0|acc       |↑  | 0.3550|±  |0.0096|
+|xstorycloze            |N/A    |none  |     0|acc       |↑  | 0.5961|±  |0.0038|
+| - xstorycloze_ar      |      1|none  |     0|acc       |↑  | 0.5837|±  |0.0127|
+| - xstorycloze_en      |      1|none  |     0|acc       |↑  | 0.7551|±  |0.0111|
+| - xstorycloze_es      |      1|none  |     0|acc       |↑  | 0.6724|±  |0.0121|
+| - xstorycloze_eu      |      1|none  |     0|acc       |↑  | 0.5129|±  |0.0129|
+| - xstorycloze_hi      |      1|none  |     0|acc       |↑  | 0.5387|±  |0.0128|
+| - xstorycloze_id      |      1|none  |     0|acc       |↑  | 0.6367|±  |0.0124|
+| - xstorycloze_my      |      1|none  |     0|acc       |↑  | 0.4970|±  |0.0129|
+| - xstorycloze_ru      |      1|none  |     0|acc       |↑  | 0.6578|±  |0.0122|
+| - xstorycloze_sw      |      1|none  |     0|acc       |↑  | 0.5149|±  |0.0129|
+| - xstorycloze_te      |      1|none  |     0|acc       |↑  | 0.5341|±  |0.0128|
+| - xstorycloze_zh      |      1|none  |     0|acc       |↑  | 0.6539|±  |0.0122|
+|xwinograd              |N/A    |none  |     0|acc       |↑  | 0.7977|±  |0.0059|
+| - xwinograd_en        |      1|none  |     0|acc       |↑  | 0.8563|±  |0.0073|
+| - xwinograd_fr        |      1|none  |     0|acc       |↑  | 0.7108|±  |0.0501|
+| - xwinograd_jp        |      1|none  |     0|acc       |↑  | 0.7049|±  |0.0147|
+| - xwinograd_pt        |      1|none  |     0|acc       |↑  | 0.7452|±  |0.0269|
+| - xwinograd_ru        |      1|none  |     0|acc       |↑  | 0.6889|±  |0.0261|
+| - xwinograd_zh        |      1|none  |     0|acc       |↑  | 0.8135|±  |0.0174|
+
+|       Groups       |Version|Filter|n-shot|  Metric  |   | Value |   |Stderr|
+|--------------------|-------|------|-----:|----------|---|------:|---|-----:|
+|lambada_multilingual|N/A    |none  |     0|acc       |↑  | 0.4347|±  |0.0030|
+|                    |       |none  |     0|perplexity|↓  |51.4735|±  |1.5222|
+|pawsx               |N/A    |none  |     0|acc       |↑  | 0.4834|±  |0.0042|
+|xcopa               |N/A    |none  |     0|acc       |↑  | 0.5900|±  |0.0065|
+|xnli                |N/A    |none  |     0|acc       |↑  | 0.3811|±  |0.0024|
+|xstorycloze         |N/A    |none  |     0|acc       |↑  | 0.5961|±  |0.0038|
+|xwinograd           |N/A    |none  |     0|acc       |↑  | 0.7977|±  |0.0059|

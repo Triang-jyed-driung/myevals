@@ -1,0 +1,149 @@
+hf (pretrained=/home/zhangping/zrc/llama-3.2-3b,dtype=float,trust_remote_code=True,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto:4 (64,64,64,64,64)
+|     Tasks      |Version|Filter|n-shot|  Metric  |   | Value |   |Stderr|
+|----------------|-------|------|-----:|----------|---|------:|---|-----:|
+|arc_challenge   |      1|none  |     0|acc       |↑  | 0.4215|±  |0.0144|
+|                |       |none  |     0|acc_norm  |↑  | 0.4599|±  |0.0146|
+|arc_easy        |      1|none  |     0|acc       |↑  | 0.7454|±  |0.0089|
+|                |       |none  |     0|acc_norm  |↑  | 0.7163|±  |0.0092|
+| - cola         |      1|none  |     0|mcc       |↑  |-0.0892|±  |0.0299|
+|glue            |N/A    |none  |     0|acc       |↑  | 0.3838|±  |0.0019|
+|                |       |none  |     0|f1        |↑  | 0.5399|±  |0.0026|
+|                |       |none  |     0|mcc       |↑  |-0.0892|±  |0.0299|
+|hellaswag       |      1|none  |     0|acc       |↑  | 0.5531|±  |0.0050|
+|                |       |none  |     0|acc_norm  |↑  | 0.7361|±  |0.0044|
+|lambada_openai  |      1|none  |     0|acc       |↑  | 0.7054|±  |0.0064|
+|                |       |none  |     0|perplexity|↓  | 3.9425|±  |0.0828|
+| - mnli         |      1|none  |     0|acc       |↑  | 0.3453|±  |0.0048|
+| - mnli_mismatch|      1|none  |     0|acc       |↑  | 0.3559|±  |0.0048|
+| - mrpc         |      1|none  |     0|acc       |↑  | 0.6275|±  |0.0240|
+|                |       |none  |     0|f1        |↑  | 0.7164|±  |0.0221|
+|piqa            |      1|none  |     0|acc       |↑  | 0.7666|±  |0.0099|
+|                |       |none  |     0|acc_norm  |↑  | 0.7748|±  |0.0097|
+| - qnli         |      1|none  |     0|acc       |↑  | 0.5005|±  |0.0068|
+| - qqp          |      2|none  |     0|acc       |↑  | 0.3722|±  |0.0024|
+|                |       |none  |     0|f1        |↑  | 0.5381|±  |0.0026|
+| - rte          |      1|none  |     0|acc       |↑  | 0.5451|±  |0.0300|
+|sciq            |      1|none  |     0|acc       |↑  | 0.9570|±  |0.0064|
+|                |       |none  |     0|acc_norm  |↑  | 0.9270|±  |0.0082|
+| - sst2         |      1|none  |     0|acc       |↑  | 0.7580|±  |0.0145|
+|winogrande      |      1|none  |     0|acc       |↑  | 0.6985|±  |0.0129|
+| - wnli         |      2|none  |     0|acc       |↑  | 0.5493|±  |0.0595|
+
+|Groups|Version|Filter|n-shot|Metric|   | Value |   |Stderr|
+|------|-------|------|-----:|------|---|------:|---|-----:|
+|glue  |N/A    |none  |     0|acc   |↑  | 0.3838|±  |0.0019|
+|      |       |none  |     0|f1    |↑  | 0.5399|±  |0.0026|
+|      |       |none  |     0|mcc   |↑  |-0.0892|±  |0.0299|
+
+
+hf (pretrained=Qwen/Qwen2.5-1.5B,dtype=float,trust_remote_code=True,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto:4 (64,64,64,64,64)
+|     Tasks      |Version|Filter|n-shot|  Metric  |   |Value |   |Stderr|
+|----------------|-------|------|-----:|----------|---|-----:|---|-----:|
+|arc_challenge   |      1|none  |     0|acc       |↑  |0.4121|±  |0.0144|
+|                |       |none  |     0|acc_norm  |↑  |0.4514|±  |0.0145|
+|arc_easy        |      1|none  |     0|acc       |↑  |0.7551|±  |0.0088|
+|                |       |none  |     0|acc_norm  |↑  |0.7146|±  |0.0093|
+| - cola         |      1|none  |     0|mcc       |↑  |0.0077|±  |0.0309|
+|glue            |N/A    |none  |     0|acc       |↑  |0.6712|±  |0.0018|
+|                |       |none  |     0|f1        |↑  |0.5281|±  |0.0041|
+|                |       |none  |     0|mcc       |↑  |0.0077|±  |0.0309|
+|hellaswag       |      1|none  |     0|acc       |↑  |0.5020|±  |0.0050|
+|                |       |none  |     0|acc_norm  |↑  |0.6775|±  |0.0047|
+|lambada_openai  |      1|none  |     0|acc       |↑  |0.6295|±  |0.0067|
+|                |       |none  |     0|perplexity|↓  |5.6771|±  |0.1455|
+| - mnli         |      1|none  |     0|acc       |↑  |0.5249|±  |0.0050|
+| - mnli_mismatch|      1|none  |     0|acc       |↑  |0.5261|±  |0.0050|
+| - mrpc         |      1|none  |     0|acc       |↑  |0.7525|±  |0.0214|
+|                |       |none  |     0|f1        |↑  |0.8303|±  |0.0167|
+|piqa            |      1|none  |     0|acc       |↑  |0.7579|±  |0.0100|
+|                |       |none  |     0|acc_norm  |↑  |0.7606|±  |0.0100|
+| - qnli         |      1|none  |     0|acc       |↑  |0.5501|±  |0.0067|
+| - qqp          |      2|none  |     0|acc       |↑  |0.7531|±  |0.0021|
+|                |       |none  |     0|f1        |↑  |0.5250|±  |0.0042|
+| - rte          |      1|none  |     0|acc       |↑  |0.7004|±  |0.0276|
+|sciq            |      1|none  |     0|acc       |↑  |0.9420|±  |0.0074|
+|                |       |none  |     0|acc_norm  |↑  |0.9320|±  |0.0080|
+| - sst2         |      1|none  |     0|acc       |↑  |0.8842|±  |0.0108|
+|winogrande      |      1|none  |     0|acc       |↑  |0.6338|±  |0.0135|
+| - wnli         |      2|none  |     0|acc       |↑  |0.5070|±  |0.0598|
+
+|Groups|Version|Filter|n-shot|Metric|   |Value |   |Stderr|
+|------|-------|------|-----:|------|---|-----:|---|-----:|
+|glue  |N/A    |none  |     0|acc   |↑  |0.6712|±  |0.0018|
+|      |       |none  |     0|f1    |↑  |0.5281|±  |0.0041|
+|      |       |none  |     0|mcc   |↑  |0.0077|±  |0.0309|
+
+2025-02-25:03:07:30,567 INFO     [evaluation_tracker.py:240] Output path not provided, skipping saving results aggregated
+hf (pretrained=/home/zhangping/zrc/llama-3.2-1b,dtype=float,trust_remote_code=True,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto:4 (64,64,64,64,64)
+|     Tasks      |Version|Filter|n-shot|  Metric  |   | Value |   |Stderr|
+|----------------|-------|------|-----:|----------|---|------:|---|-----:|
+|arc_challenge   |      1|none  |     0|acc       |↑  | 0.3131|±  |0.0136|
+|                |       |none  |     0|acc_norm  |↑  | 0.3626|±  |0.0140|
+|arc_easy        |      1|none  |     0|acc       |↑  | 0.6549|±  |0.0098|
+|                |       |none  |     0|acc_norm  |↑  | 0.6048|±  |0.0100|
+| - cola         |      1|none  |     0|mcc       |↑  |-0.0012|±  |0.0311|
+|glue            |N/A    |none  |     0|acc       |↑  | 0.4628|±  |0.0019|
+|                |       |none  |     0|f1        |↑  | 0.3940|±  |0.0034|
+|                |       |none  |     0|mcc       |↑  |-0.0012|±  |0.0311|
+|hellaswag       |      1|none  |     0|acc       |↑  | 0.4772|±  |0.0050|
+|                |       |none  |     0|acc_norm  |↑  | 0.6366|±  |0.0048|
+|lambada_openai  |      1|none  |     0|acc       |↑  | 0.6297|±  |0.0067|
+|                |       |none  |     0|perplexity|↓  | 5.7268|±  |0.1391|
+| - mnli         |      1|none  |     0|acc       |↑  | 0.3584|±  |0.0048|
+| - mnli_mismatch|      1|none  |     0|acc       |↑  | 0.3559|±  |0.0048|
+| - mrpc         |      1|none  |     0|acc       |↑  | 0.5245|±  |0.0248|
+|                |       |none  |     0|f1        |↑  | 0.6407|±  |0.0242|
+|piqa            |      1|none  |     0|acc       |↑  | 0.7448|±  |0.0102|
+|                |       |none  |     0|acc_norm  |↑  | 0.7459|±  |0.0102|
+| - qnli         |      1|none  |     0|acc       |↑  | 0.5173|±  |0.0068|
+| - qqp          |      2|none  |     0|acc       |↑  | 0.5003|±  |0.0025|
+|                |       |none  |     0|f1        |↑  | 0.3915|±  |0.0034|
+| - rte          |      1|none  |     0|acc       |↑  | 0.5668|±  |0.0298|
+|sciq            |      1|none  |     0|acc       |↑  | 0.9140|±  |0.0089|
+|                |       |none  |     0|acc_norm  |↑  | 0.8830|±  |0.0102|
+| - sst2         |      1|none  |     0|acc       |↑  | 0.7041|±  |0.0155|
+|winogrande      |      1|none  |     0|acc       |↑  | 0.6069|±  |0.0137|
+| - wnli         |      2|none  |     0|acc       |↑  | 0.4507|±  |0.0595|
+
+|Groups|Version|Filter|n-shot|Metric|   | Value |   |Stderr|
+|------|-------|------|-----:|------|---|------:|---|-----:|
+|glue  |N/A    |none  |     0|acc   |↑  | 0.4628|±  |0.0019|
+|      |       |none  |     0|f1    |↑  | 0.3940|±  |0.0034|
+|      |       |none  |     0|mcc   |↑  |-0.0012|±  |0.0311|
+
+hf (pretrained=Qwen/Qwen2.5-3B,dtype=float,trust_remote_code=True,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto:4 (32,64,64,64,64)
+|     Tasks      |Version|Filter|n-shot|  Metric  |   |Value |   |Stderr|
+|----------------|-------|------|-----:|----------|---|-----:|---|-----:|
+|arc_challenge   |      1|none  |     0|acc       |↑  |0.4497|±  |0.0145|
+|                |       |none  |     0|acc_norm  |↑  |0.4744|±  |0.0146|
+|arc_easy        |      1|none  |     0|acc       |↑  |0.7744|±  |0.0086|
+|                |       |none  |     0|acc_norm  |↑  |0.7311|±  |0.0091|
+| - cola         |      1|none  |     0|mcc       |↑  |0.1568|±  |0.0331|
+|glue            |N/A    |none  |     0|acc       |↑  |0.7514|±  |0.0016|
+|                |       |none  |     0|f1        |↑  |0.8016|±  |0.0025|
+|                |       |none  |     0|mcc       |↑  |0.1568|±  |0.0331|
+|hellaswag       |      1|none  |     0|acc       |↑  |0.5492|±  |0.0050|
+|                |       |none  |     0|acc_norm  |↑  |0.7353|±  |0.0044|
+|lambada_openai  |      1|none  |     0|acc       |↑  |0.6715|±  |0.0065|
+|                |       |none  |     0|perplexity|↓  |4.6136|±  |0.1095|
+| - mnli         |      1|none  |     0|acc       |↑  |0.5515|±  |0.0050|
+| - mnli_mismatch|      1|none  |     0|acc       |↑  |0.5659|±  |0.0050|
+| - mrpc         |      1|none  |     0|acc       |↑  |0.7672|±  |0.0209|
+|                |       |none  |     0|f1        |↑  |0.8342|±  |0.0168|
+|piqa            |      1|none  |     0|acc       |↑  |0.7856|±  |0.0096|
+|                |       |none  |     0|acc_norm  |↑  |0.7884|±  |0.0095|
+| - qnli         |      1|none  |     0|acc       |↑  |0.6723|±  |0.0064|
+| - qqp          |      2|none  |     0|acc       |↑  |0.8527|±  |0.0018|
+|                |       |none  |     0|f1        |↑  |0.8012|±  |0.0025|
+| - rte          |      1|none  |     0|acc       |↑  |0.7545|±  |0.0259|
+|sciq            |      1|none  |     0|acc       |↑  |0.9620|±  |0.0060|
+|                |       |none  |     0|acc_norm  |↑  |0.9540|±  |0.0066|
+| - sst2         |      1|none  |     0|acc       |↑  |0.9014|±  |0.0101|
+|winogrande      |      1|none  |     0|acc       |↑  |0.6851|±  |0.0131|
+| - wnli         |      2|none  |     0|acc       |↑  |0.5493|±  |0.0595|
+
+|Groups|Version|Filter|n-shot|Metric|   |Value |   |Stderr|
+|------|-------|------|-----:|------|---|-----:|---|-----:|
+|glue  |N/A    |none  |     0|acc   |↑  |0.7514|±  |0.0016|
+|      |       |none  |     0|f1    |↑  |0.8016|±  |0.0025|
+|      |       |none  |     0|mcc   |↑  |0.1568|±  |0.0331|
